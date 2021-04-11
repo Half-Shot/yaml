@@ -52,7 +52,7 @@
     "docs:deploy": "cd docs-slate && ./deploy.sh",
     "docs": "cd docs-slate && bundle exec middleman server",
     "preversion": "npm test && npm run build",
-    "prepare": "npm run build",
+    "postinstall": "npm run build",
     "prepublishOnly": "npm run clean && npm test && npm run build"
   },
   "browserslist": "> 0.5%, not dead, not ie 11",
